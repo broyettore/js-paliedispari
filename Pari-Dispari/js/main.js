@@ -31,12 +31,9 @@ let playerHand = "";
 
 // ciclo infinito se la risposta non corrisponde a quelle stabbilite
 for (let i = 0; i < Infinity; i++) {
-    let choice = prompt("pari o dispari");
+    let choice = prompt("pari o dispari").toLowerCase();
 
     if (choice === "pari" || choice === "dispari") {
-        boolean = true;
-        break;
-    } else if (choice === "Pari" || choice === "Dispari") {
         boolean = true;
         break;
     } 
@@ -45,13 +42,16 @@ for (let i = 0; i < Infinity; i++) {
 // Se la var booleana è vera, il giocatore mette un num e la funzione parte
 if (boolean = true) {
     playerHand = Number(prompt("Inserisci un numero da 1 a 5"));
-    alert(showWinner(playerHand, computerHand));
-}
 
-// se il giocatore non inserisce un num vaildo il pc vince di default
-if (isNaN(playerHand)) {
-    alert("Non hai inserito un numero, il computer vince")
-};
+    // se il giocatore non inserisce un num vaildo il pc vince di default
+    if (isNaN(playerHand)) {
+        alert("Non hai inserito un numero, il computer vince")
+    } else if (playerHand < 1 || playerHand > 5) {
+        alert("Non hai inserito un numero vaildo, il computer vince")
+    } else {
+        alert(showWinner(playerHand, computerHand));
+    }
+}
 
 console.log(playerHand);
 console.log(computerHand);

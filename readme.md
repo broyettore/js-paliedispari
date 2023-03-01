@@ -33,7 +33,7 @@ Dichiariamo chi ha vinto.
 * Creo un ciclo infinito con la domanda Pari o Dispari.
 * Se la risposta del giocatore corrsiponde a pari o dispari, allora la variabile booleana diventerà true e il ciclo si fermerà.
 * Fuori dal ciclo, imposto una condzione per cui se la variabile booleana è vera il giocatore dovrà inserire un numero da 1 a 5 e seguirà il risultato grazie alla funzione2.
-* ALTRIMENTI se il giocatore non inserisce un numero(Nan) o non inserisce nulla, il computer vincerà di default.
+* ALTRIMENTI se il giocatore non inserisce un numero(Nan) o non inserisce un numero vaildo (num < 1 o num > 5), il computer vincerà di default.
 
 ## Problem-Solving Parola Palindroma
 
