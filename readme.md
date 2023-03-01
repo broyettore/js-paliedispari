@@ -30,7 +30,22 @@ Dichiariamo chi ha vinto.
 
 ### Step 3 : Le condizoni
 
-* Creo un loop infinito con la domanda Pari o Dispari.
+* Creo un ciclo infinito con la domanda Pari o Dispari.
 * Se la risposta del giocatore corrsiponde a pari o dispari, allora la variabile booleana diventerà true e il ciclo si fermerà.
-* Fuori dal loop, imposto una condzione per cui se la variabile booleana è vera il giocatore dovrà inserire un numero da 1 a 5 e seguirà il risultato grazie alla funzione2.
+* Fuori dal ciclo, imposto una condzione per cui se la variabile booleana è vera il giocatore dovrà inserire un numero da 1 a 5 e seguirà il risultato grazie alla funzione2.
 * ALTRIMENTI se il giocatore non inserisce un numero(Nan) o non inserisce nulla, il computer vincerà di default.
+
+## Problem-Solving Parola Palindroma
+
+### Step 1 : La Funzione
+
+* Creo una funzione1 il cui argomento sarà la parola da verificare.
+* Al suo intenro creo una varibile1 con una stringa vuota che sarà ll risultato.
+* Creo un ciclo che partirà dalla fine della lunghezza stringa e avrà una durata >= a 0.
+* Ad ogni ciclo verrà tolta una lettera dalla parola che verrà aggiunta/concatenata nella variabile1.
+* la funzione avrà come risultato finale la variabile1.
+
+### Step 2 : La Condizione
+
+* Creo un prompt per chiedere all'utente di inserire una parola.
+* SE la parola inserita é uguale alla parola dopo la verifica della funzione allor la parola è palindroma altrimenti non.
