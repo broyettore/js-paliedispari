@@ -36,8 +36,7 @@ for (let i = 0; i < Infinity; i++) {
     } else if (choice === "Pari" || choice === "Dispari") {
         boolean = true;
         break;
-    } else {
-    }
+    } 
 }
 
 if (boolean = true) {
